@@ -88,7 +88,7 @@ export default function Home() {
       {/* Products Section */}
       <section className="w-full flex flex-col items-center py-20 bg-gray-100 bg-green">
         <motion.h2
-          className="text-3xl font-semibold mb-10 text-gray-900 dark:text-white"
+          className="text-3xl font-semibold mb-10 text-gray-900"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -126,7 +126,7 @@ export default function Home() {
           href="/shop"
           className="mt-10 px-6 py-3 bg-gray-900 bg-opacity-90 text-white rounded-full shadow-md hover:bg-gray-900 duration-300"
         >
-          View All Products
+          Shop Now
         </Link>
       </section>
 
@@ -158,9 +158,9 @@ export default function Home() {
       )}
 
       {/* About Section */}
-      <section className="w-full flex flex-col items-center py-20 bg-white dark:bg-neutral-800">
+      <section className="w-full flex flex-col items-center py-20 bg-white">
         <motion.h2
-          className="text-3xl font-semibold mb-10 text-gray-900 dark:text-white"
+          className="text-3xl font-semibold mb-10 text-gray-900"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -168,12 +168,12 @@ export default function Home() {
           About Us
         </motion.h2>
         <motion.p
-          className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl text-center"
+          className="text-lg text-gray-600 max-w-3xl text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          GrowthWell is committed to innovation and excellence in animal
+          Growthwell is committed to innovation and excellence in animal
           nutrition. Our mission is to provide top-notch supplements that
           promote the health and longevity of your animals. With years of
           experience and a dedicated team of experts, we strive to bring you the
@@ -182,9 +182,9 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="w-full flex flex-col items-center py-20 bg-gray-100 dark:bg-neutral-900">
+      <section className="w-full flex flex-col items-center py-20 bg-gray-100">
         <motion.h2
-          className="text-3xl font-semibold mb-10 text-gray-900 dark:text-white"
+          className="text-3xl font-semibold mb-10 text-gray-900"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -192,7 +192,7 @@ export default function Home() {
           Contact Us
         </motion.h2>
         <motion.form
-          className="w-full max-w-lg bg-white dark:bg-neutral-800 p-8 rounded-lg shadow-md"
+          className="w-full max-w-lg bg-white p-8 rounded-lg shadow-md"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -201,12 +201,12 @@ export default function Home() {
           <div className="flex flex-col gap-6 items-center">
             {/* Hotline */}
             <div className="flex flex-col items-center text-lg">
-              <span className="text-3xl font-bold text-gray-900 dark:text-white uppercase">
-                Hotline:
+              <span className="text-3xl font-bold text-gray-900">
+                HOTLINE:
               </span>
               <a
                 href="tel:+94741202084"
-                className="ml-2 pt-2 text-xl text-blue-500 dark:text-blue-300"
+                className="ml-2 pt-2 text-xl text-blue-500"
               >
                 +94741202084
               </a>
@@ -214,14 +214,14 @@ export default function Home() {
             <div className="flex items-center text-lg">
               <FontAwesomeIcon
                 icon={faPhone}
-                className="text-gray-900 dark:text-white mr-2"
+                className="text-gray-900 mr-2"
               />
-              <span className="font-bold text-gray-900 dark:text-white">
+              <span className="font-bold text-gray-900">
                 Landline:
               </span>
               <a
                 href="tel:+94741202084"
-                className="ml-2 text-blue-500 dark:text-blue-300"
+                className="ml-2 text-blue-500"
               >
                 +94741202084
               </a>
@@ -229,14 +229,14 @@ export default function Home() {
             <div className="flex items-center text-lg">
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                className="text-green-500 dark:text-green-300 mr-2"
+                className="text-green-500 mr-2"
               />
-              <span className="font-bold text-gray-900 dark:text-white">
+              <span className="font-bold text-gray-900">
                 WhatsApp:
               </span>
               <a
                 href="tel:+94741202084"
-                className="ml-2 text-blue-500 dark:text-blue-300"
+                className="ml-2 text-blue-500"
               >
                 +94741202084
               </a>
