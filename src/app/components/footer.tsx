@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-900 py-10 px-5 md:px-20">
+    <footer className="bg-gray-100 text-gray-900 py-10 px-5 md:px-20 border-t-4">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Site Name */}
         <div>
