@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-neutral-800 text-gray-900 dark:text-gray-300 py-10 px-5 md:px-20">
+    <footer className="bg-gray-100 text-gray-900 py-10 px-5 md:px-20">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Site Name */}
         <div>
@@ -90,7 +90,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full p-2.5 rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-700 text-gray-900 dark:text-gray-200"
+                className="w-full p-2.5 rounded-md border border-gray-300 bg-white text-gray-900"
               />
             </div>
             <div>
