@@ -2,101 +2,99 @@
   {
     "id": 1,
     "name": "Product 1",
-    "image": "/images/product1.webp",
-    "images": ["/images/product1_1.webp", "/images/product1_2.webp", "/images/product1_3.webp"],
-    "description": "Description of Product 1.",
-    "price": 1500,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "description": "Description for Product 1",
+    "price": 100,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 5, "text": "Great product!" },
+      { "rating": 4, "text": "Good value." }
+    ]
   },
   {
     "id": 2,
     "name": "Product 2",
-    "image": "/images/product2.webp",
-    "images": ["/images/product2_1.webp", "/images/product2_2.webp", "/images/product2_3.webp"],
-    "description": "Description of Product 2.",
-    "price": 1000,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "description": "Description for Product 2",
+    "price": 200,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 3, "text": "Not bad." },
+      { "rating": 2, "text": "Could be better." }
+    ]
   },
   {
     "id": 3,
     "name": "Product 3",
-    "image": "/images/product3.webp",
-    "images": ["/images/product3_1.webp", "/images/product3_2.webp", "/images/product3_3.webp"],
-    "description": "Description of Product 3.",
-    "price": 2000,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "description": "Description for Product 3",
+    "price": 300,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 1, "text": "Terrible!" },
+      { "rating": 2, "text": "Not worth it." }
+    ]
   },
   {
     "id": 4,
-    "name": "Product 1",
-    "image": "/images/product1.webp",
-    "images": ["/images/product1_1.webp", "/images/product1_2.webp", "/images/product1_3.webp"],
-    "description": "Description of Product 1.",
-    "price": 1500,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "name": "Product 4",
+    "description": "Description for Product 4",
+    "price": 400,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 4, "text": "Good value." },
+      { "rating": 5, "text": "Great product!" }
+    ]
   },
   {
     "id": 5,
-    "name": "Product 2",
-    "image": "/images/product2.webp",
-    "images": ["/images/product2_1.webp", "/images/product2_2.webp", "/images/product2_3.webp"],
-    "description": "Description of Product 2.",
-    "price": 1000,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "name": "Product 5",
+    "description": "Description for Product 5",
+    "price": 500,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 2, "text": "Could be better." },
+      { "rating": 3, "text": "Not bad." }
+    ]
   },
   {
     "id": 6,
-    "name": "Product 3",
-    "image": "/images/product3.webp",
-    "images": ["/images/product3_1.webp", "/images/product3_2.webp", "/images/product3_3.webp"],
-    "description": "Description of Product 3.",
-    "price": 2000,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "name": "Product 6",
+    "description": "Description for Product 6",
+    "price": 600,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 3, "text": "Not bad." },
+      { "rating": 4, "text": "Good value." }
+    ]
   },
   {
     "id": 7,
-    "name": "Product 1",
-    "image": "/images/product1.webp",
-    "images": ["/images/product1_1.webp", "/images/product1_2.webp", "/images/product1_3.webp"],
-    "description": "Description of Product 1.",
-    "price": 1500,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
-  },
-  {
-    "id": 8,
-    "name": "Product 2",
-    "image": "/images/product2.webp",
-    "images": ["/images/product2_1.webp", "/images/product2_2.webp", "/images/product2_3.webp"],
-    "description": "Description of Product 2.",
-    "price": 1000,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
-  },
-  {
-    "id": 9,
-    "name": "Product 3",
-    "image": "/images/product3.webp",
-    "images": ["/images/product3_1.webp", "/images/product3_2.webp", "/images/product3_3.webp"],
-    "description": "Description of Product 3.",
-    "price": 2000,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
-  },
-  {
-    "id": 10,
-    "name": "Product 1",
-    "image": "/images/product1.webp",
-    "images": ["/images/product1_1.webp", "/images/product1_2.webp", "/images/product1_3.webp"],
-    "description": "Description of Product 1.",
-    "price": 1500,
-    "contents": ["Content 1", "Content 2", "Content 3"],
-    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"]
+    "name": "Product 7",
+    "description": "Description for Product 7",
+    "price": 700,
+    "image": "/path/to/image.jpg",
+    "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "contents": ["Content 1", "Content 2"],
+    "benefits": ["Benefit 1", "Benefit 2"],
+    "reviews": [
+      { "rating": 5, "text": "Not bad." },
+      { "rating": 4, "text": "Good value." }
+    ]
   }
 ]
