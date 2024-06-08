@@ -1,20 +1,37 @@
 "use client";
 
 import { useParams } from 'next/navigation';
-import { useCart } from '../..//context/CartContext';
-import products from '../../products.json';
+import { useState } from 'react';
+import { useCart } from '../../context/CartContext';
+import productsData from '../../products.json';
 import Carousel from '../../components/carousel';
+import StarRating from '../../components/starRating';
 
 export default function ProductPage() {
   const params = useParams();
   const { id } = params;
   const { addToCart } = useCart();
+  const [products, setProducts] = useState(productsData);
+  const [reviewText, setReviewText] = useState('');
+  const [reviewRating, setReviewRating] = useState(0);
 
   const product = products.find((prod) => prod.id === parseInt(id));
 
   if (!product) {
     return <p>Product not found</p>;
   }
+
+  const handleAddReview = () => {
+    const newReview = { rating: reviewRating, text: reviewText };
+    const updatedProducts = products.map((prod) =>
+      prod.id === product.id
+        ? { ...prod, reviews: [...prod.reviews, newReview] }
+        : prod
+    );
+    setProducts(updatedProducts);
+    setReviewText('');
+    setReviewRating(0);
+  };
 
   return (
     <main className="flex flex-col items-center min-h-screen py-10 bg-gray-100">
@@ -50,6 +67,33 @@ export default function ProductPage() {
               <li key={index}>{benefit}</li>
             ))}
           </ul>
+        </section>
+        <section className="mt-10">
+          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Reviews</h2>
+          <div className="mb-8">
+            {product.reviews.map((review, index) => (
+              <div key={index} className="mb-4">
+                <StarRating rating={review.rating} setRating={() => {}} />
+                <p className="text-gray-600">{review.text}</p>
+              </div>
+            ))}
+          </div>
+          <div>
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Add a Review</h3>
+            <StarRating rating={reviewRating} setRating={setReviewRating} />
+            <textarea
+              value={reviewText}
+              onChange={(e) => setReviewText(e.target.value)}
+              className="border border-gray-300 p-2 rounded-md w-full mb-4"
+              placeholder="Write your review..."
+            ></textarea>
+            <button
+              className="px-4 py-2 bg-blue-600 text-white rounded-md shadow-md hover:bg-blue-500 duration-300"
+              onClick={handleAddReview}
+            >
+              Submit Review
+            </button>
+          </div>
         </section>
       </div>
     </main>
