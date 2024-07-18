@@ -26,7 +26,7 @@ export default function Shop() {
                 <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-lg mb-4 cursor-pointer" />
               </Link>
               <h2 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h2>
-              <p className="text-gray-600 mb-4">{product.description}</p>       
+              <p className="text-gray-600 mb-4">{product.description}</p>
               <p className="text-lg font-bold text-gray-900 mb-4">Rs. {product.price}/=</p>
               <div className="flex items-center mb-4">
                 <span className="text-yellow-500">{averageRating.toFixed(1)}</span>
