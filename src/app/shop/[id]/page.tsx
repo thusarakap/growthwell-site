@@ -7,7 +7,13 @@
 // import Carousel from '../../components/carousel';
 // import StarRating from '../../components/starRating';
 
-// export default function ProductPage() {
+export default function ProductPage() {
+
+    return (
+        <div>
+            <h1>Product Page</h1>
+        </div>
+    );
   
 //   const params = useParams();
 //   const { id } = params;
@@ -101,4 +107,4 @@
 //       </div>
 //     </main>
 //   );
-// }
+}
