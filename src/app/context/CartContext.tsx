@@ -6,11 +6,18 @@ import { createContext, useContext, useState, useEffect, ReactNode } from "react
 interface Product {
   id: number;
   name: string;
-  image: string;
   description: string;
-  price: string;
+  price: number;
+  image: string;
+  images: string[];
+  contents: string[];
+  benefits: string[];
+  reviews: {
+    rating: number;
+    text: string;
+  }[];
+  category?: string; // Make category optional
 }
-
 // Define the context type
 interface CartContextType {
     cart: Product[];
