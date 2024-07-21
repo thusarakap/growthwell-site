@@ -3,8 +3,9 @@
     "id": 1,
     "name": "Product 1",
     "description": "Description for Product 1",
-    "price": 100,
-    "image": "/path/to/image.jpg",
+    "category": "Supplements",
+    "price": 1000,
+    "image": "/images/product1.webp",
     "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
     "contents": ["Content 1", "Content 2"],
     "benefits": ["Benefit 1", "Benefit 2"],
@@ -17,62 +18,67 @@
     "id": 2,
     "name": "Product 2",
     "description": "Description for Product 2",
-    "price": 200,
-    "image": "/path/to/image.jpg",
+    "category": "Supplements",
+    "price": 1250,
+    "image": "/images/product2.webp",
     "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
     "contents": ["Content 1", "Content 2"],
     "benefits": ["Benefit 1", "Benefit 2"],
     "reviews": [
-      { "rating": 3, "text": "Not bad." },
-      { "rating": 2, "text": "Could be better." }
+      { "rating": 5, "text": "Great product!" },
+      { "rating": 4, "text": "Good value." }
     ]
   },
   {
     "id": 3,
     "name": "Product 3",
     "description": "Description for Product 3",
-    "price": 300,
-    "image": "/path/to/image.jpg",
+    "category": "Supplements",
+    "price": 800,
+    "image": "/images/product3.webp",
     "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
     "contents": ["Content 1", "Content 2"],
     "benefits": ["Benefit 1", "Benefit 2"],
     "reviews": [
-      { "rating": 1, "text": "Terrible!" },
-      { "rating": 2, "text": "Not worth it." }
+      { "rating": 5, "text": "Great product!" },
+      { "rating": 4, "text": "Good value." }
     ]
   },
   {
     "id": 4,
     "name": "Product 4",
     "description": "Description for Product 4",
-    "price": 400,
+    "category": "Supplements",
+    "price": 1000,
     "image": "/path/to/image.jpg",
     "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
     "contents": ["Content 1", "Content 2"],
     "benefits": ["Benefit 1", "Benefit 2"],
     "reviews": [
-      { "rating": 4, "text": "Good value." },
-      { "rating": 5, "text": "Great product!" }
+      { "rating": 5, "text": "Great product!" },
+      { "rating": 4, "text": "Good value." }
     ]
   },
   {
     "id": 5,
     "name": "Product 5",
     "description": "Description for Product 5",
-    "price": 500,
+    "category": "Supplements",
+    "price": 1500,
     "image": "/path/to/image.jpg",
     "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
     "contents": ["Content 1", "Content 2"],
     "benefits": ["Benefit 1", "Benefit 2"],
     "reviews": [
-      { "rating": 2, "text": "Could be better." },
-      { "rating": 3, "text": "Not bad." }
+      { "rating": 5, "text": "Great product!" },
+      { "rating": 4, "text": "Good value." }
     ]
   },
   {
     "id": 6,
     "name": "Product 6",
     "description": "Description for Product 6",
+    "category": "Supplements",
     "price": 600,
     "image": "/path/to/image.jpg",
     "images": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
