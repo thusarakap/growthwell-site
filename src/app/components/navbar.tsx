@@ -32,8 +32,8 @@ const Navbar = () => {
   const [hoveredPath, setHoveredPath] = useState<string | null>(null);
 
   return (
-    <div className="bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 shadow-md p-4 sticky top-0 z-50">
-      <nav className="flex items-center justify-between max-w-7xl mx-auto">
+    <div className="bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 shadow-md p-4 sticky top-0 z-50 ">
+      <nav className="flex items-center justify-between max-w-7xl mx-auto h-12">
         <Link href="/">
           <p className="text-2xl font-bold text-black">Growthwell</p>
         </Link>
@@ -71,6 +71,7 @@ const Navbar = () => {
           })}
         </div>
       </nav>
+      
     </div>
   );
 };
