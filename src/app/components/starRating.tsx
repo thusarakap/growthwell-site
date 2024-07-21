@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function StarRating({ rating, setRating }) {
+export default function StarRating({ rating, setRating }: { rating: number, setRating: (rating: number) => void }) {
   const [hover, setHover] = useState(0);
 
   return (
