@@ -17,10 +17,15 @@ interface Product {
   name: string;
   description: string;
   price: number;
-  category: string;
-  brand?: string;
   image: string;
-  reviews: { rating: number; text: string }[];
+  images: string[];
+  contents: string[];
+  benefits: string[];
+  reviews: {
+    rating: number;
+    text: string;
+  }[];
+  category?: string; // Make category optional
 }
 
 interface Filters {
@@ -88,9 +93,14 @@ export default function Shop() {
   };
 
   const handleAddToCart = (product: Product | undefined) => {
-    if (product) {
+    if (product && product.category) {
       setCart((prevCart) => [...prevCart, product]);
-      addToCart({ ...product, price: product.price.toString() });
+      addToCart({
+        ...(product as Product), price: product.price,
+        images: [],
+        contents: [],
+        benefits: []
+      });
     }
   };
 
