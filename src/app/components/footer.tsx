@@ -2,8 +2,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-900 py-10 px-5 md:px-20 border-t-4">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className="bg-gray-100 text-gray-900 border-t-4">
+      <section className="">
+        <img src="/images/footerbanner.webp" className="w-full max-h-80" alt="" />
+
+      </section> 
+      <section className="min-h-80 content-center">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 py-10 px-5 md:px-20">
         {/* Site Name */}
         <div>
           <h2 className="text-2xl font-bold mb-4 text-primary">Growthwell</h2>
@@ -104,6 +109,7 @@ const Footer = () => {
           </form>
         </div>
       </div>
+    </section> 
     </footer>
   );
 };
