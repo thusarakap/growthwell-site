@@ -9,7 +9,7 @@ export default function Cart() {
   interface ProductItem {
     id: number;
     name: string;
-    price: string;
+    price: number;
     quantity: number;
     totalPrice: number;
     [key: string]: any; 
@@ -19,9 +19,9 @@ export default function Cart() {
     const existingProduct = acc.find((item) => item.id === product.id);
     if (existingProduct) {
       existingProduct.quantity += 1;
-      existingProduct.totalPrice += parseFloat(product.price);
+      existingProduct.totalPrice += parseFloat(product.price.toString());
     } else {
-      acc.push({ ...product, quantity: 1, totalPrice: parseFloat(product.price) });
+      acc.push({ ...product, quantity: 1, totalPrice: parseFloat(product.price.toString()) });
     }
     return acc;
   }, []);
