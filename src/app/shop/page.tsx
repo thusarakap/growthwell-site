@@ -87,9 +87,11 @@ export default function Shop() {
     setSearchTerm(e.target.value);
   };
 
-  const handleAddToCart = (product: Product) => {
-    setCart((prevCart) => [...prevCart, product]);
-    addToCart(product);
+  const handleAddToCart = (product: Product | undefined) => {
+    if (product) {
+      setCart((prevCart) => [...prevCart, product]);
+      addToCart({ ...product, price: product.price.toString() });
+    }
   };
 
   return (
