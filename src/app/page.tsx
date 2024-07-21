@@ -9,6 +9,13 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useInView } from "react-intersection-observer";
 
+interface Product {
+  id: string;
+  name: string;
+  description: string;
+  image: string; // Ensure there's an image property
+}
+
 const carouselImages = [
   { id: 1, src: "/images/banner.webp", alt: "Banner 1" },
   { id: 2, src: "/images/banner.webp", alt: "Banner 2" },
@@ -37,11 +44,12 @@ const products = [
 ];
 
 export default function Home() {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [products, setProducts] = useState<Product[]>([]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const handleProductClick = (product) => {
+  const handleProductClick = (product:any) => {
     setSelectedProduct(product);
   };
 
