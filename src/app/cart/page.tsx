@@ -2,12 +2,20 @@
 
 import { useCart } from "../context/CartContext";
 
-
 export default function Cart() {
   const { cart, removeFromCart, clearCart } = useCart();
 
   // Group the products by ID to count quantities and calculate the total price
-  const groupedCart = cart.reduce((acc, product) => {
+  interface ProductItem {
+    id: number;
+    name: string;
+    price: string;
+    quantity: number;
+    totalPrice: number;
+    [key: string]: any; 
+  }
+  
+  const groupedCart = cart.reduce((acc: ProductItem[], product) => {
     const existingProduct = acc.find((item) => item.id === product.id);
     if (existingProduct) {
       existingProduct.quantity += 1;
